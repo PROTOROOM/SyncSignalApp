@@ -3,7 +3,7 @@ let slideIndex = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  textSize(32);
+  textSize(windowWidth * 0.08);
   textAlign(LEFT, TOP);
 
   socket = io();
@@ -15,7 +15,7 @@ function setup() {
 function draw() {
   slides[slideIndex](this);
   fill(0);
-  text(`Slide: ${slideIndex + 1}`, 20, 20);
+//   text(`Slide: ${slideIndex + 1}`, 20, 20);
 }
 
 function keyPressed() {
