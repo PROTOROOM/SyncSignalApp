@@ -1,0 +1,30 @@
+{
+  "name": "SyncSignalApp",
+  "version": "1.0.0",
+  "description": "p5.js + Socket.io 기반 실시간 화면 동기화 앱 (host & guest)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "p5.js",
+    "socket.io",
+    "realtime",
+    "slidesync",
+    "websocket",
+    "nodejs"
+  ],
+  "author": "Seungbum Kim",
+  "license": "Apache-2.0"
+}
