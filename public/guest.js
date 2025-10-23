@@ -1,4 +1,5 @@
 let socket;
+let fs = false;
 let slideIndex = 0;
 let ding;
 let png1k;
@@ -52,4 +53,8 @@ function touchEnded() {
     //         if (click2 && click2.isLoaded()) click2.play();
     //     }
     // }
+    // if (!fs) {
+    //     fs = fullscreen(true);
+    // }
+
 }
