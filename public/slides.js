@@ -21,7 +21,7 @@ let slides = [
 
     back1(p);
 
-    p.fill(200, 180, 180, 180);
+    p.fill(220, 230, 220, 220);
     p.rect(0, u*14, windowWidth, u*4);
     p.fill(0);
     pText(p, 40, u*15, u, "화면을 몇 번 두드려서 소리가 나는지 확인해주세요.");
