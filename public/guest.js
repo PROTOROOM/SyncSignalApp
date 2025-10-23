@@ -1,12 +1,14 @@
 let socket;
 let slideIndex = 0;
 let ding;
+let png1k;
 
 
 function preload() {
   ding = loadSound("sounds/sine.wav");
   click1 = loadSound("sounds/click1.wav");
   click2 = loadSound("sounds/click2.wav");
+  png1k = loadImage("images/1kb.png");
 }
 
 function setup() {
