@@ -75,7 +75,7 @@ let slides = [
     p.text("#1-2", u, u);
     
     pText(p, u*0.5, u*3, u*1.5, "1 KB = 0.000001 GB");
-    pText(p, u*0.5, u*5, u, "아래는 1 KB 크기의 이미지 파일이다.");
+    pText(p, u*0.5, u*7, u, "아래는 1 KB 크기의 이미지 파일이다.");
     p.image(png1k, width/2, height/2);
     p.textStyle(NORMAL);
     pText(p, u*0.5, height/2+u, u*0.5, "1kb.png by Jeanpaulmars is licensed under CC-BY-SA 3.0 via Wikimedia Commons");
@@ -92,7 +92,7 @@ let slides = [
     p.text("#1-3", u, u);
 
     pText(p, u*0.5, u*3, u*1.5, "1 KB = 0.000001 GB");
-    pText(p, u*0.5, u*5, u, "우리는 지금부터 0.000001 GB 라는 먼지와 같은 작은 데이터로 물리적 공간에 소리를 쌓아보려고 한다.");
+    pText(p, u*0.5, u*7, u, "우리는 지금부터 0.000001 GB 라는 먼지와 같은 작은 데이터로 물리적 공간에 소리를 쌓아보려고 한다.");
     
   },  
 
@@ -123,7 +123,7 @@ let slides = [
     p.text("#2-2", u, u);
 
     pText(p, u*0.5, u*3, u*1.2, "((t >> 16) * 7 | (t >> a) * 8 | (t >> b) * 7) & (t >> 7) = ? ");
-    pText(p, u*0.5, u*7, u, "이 계산식의 결과값은 우리에게 아무런 의미가 없다. 이 값을 소리로 보냈을 때 노이즈가 발생한다.");
+    pText(p, u*0.5, u*8, u, "이 계산식의 결과값은 우리에게 아무런 의미가 없다. 이 값을 소리로 보냈을 때 노이즈가 발생한다.");
   },
   //2-3
   (p) => {
@@ -137,7 +137,7 @@ let slides = [
     p.text("#2-3", u, u);
 
     pText(p, u*0.5, u*3, u*1.2, "((t >> 16) * 7 | (t >> a) * 8 | (t >> b) * 7) & (t >> 7) = ? ");
-    pText(p, u*0.5, u*7, u, "수식을 계산하는 악기를 모았다.");
+    pText(p, u*0.5, u*8, u, "수식을 계산하는 악기를 모았다.");
   },
 
   // ========================================== Scene 3
