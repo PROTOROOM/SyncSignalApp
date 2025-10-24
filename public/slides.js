@@ -1,4 +1,8 @@
+let s5title1 = "사운드로 매개하지만, 데이터에 대해 말하려고 합니다.";
+let s5title2 = "데이터에 대해 말하지만, 사운드로 매개하려고 합니다.";
+
 let u;
+
 function setU() {
   u = windowWidth * 0.06;
 }
@@ -114,7 +118,7 @@ let slides = [
   //2-2
   (p) => {
     setU(); 
-    p.background(100, 255, 100); 
+    p.background(100, 100, 255); 
 
     p.textSize(u);
     p.textStyle(BOLD);
@@ -123,12 +127,12 @@ let slides = [
     p.text("#2-2", u, u);
 
     pText(p, u*0.5, u*3, u*1.2, "((t >> 16) * 7 | (t >> a) * 8 | (t >> b) * 7) & (t >> 7) = ? ");
-    pText(p, u*0.5, u*8, u, "이 계산식의 결과값은 우리에게 아무런 의미가 없습니다. 이 값을 소리로 보냈을 때 노이즈가 발생합니다.");
+    pText(p, u*0.5, u*8, u, "1KB를 구성하는 계산식 중 하나입니다. 이런 수식을 계산하는 악기를 모았습니다.");
   },
   //2-3
   (p) => {
     setU(); 
-    p.background(100, 100, 255); 
+    p.background(100, 255, 100); 
 
     p.textSize(u);
     p.textStyle(BOLD);
@@ -137,8 +141,9 @@ let slides = [
     p.text("#2-3", u, u);
 
     pText(p, u*0.5, u*3, u*1.2, "((t >> 16) * 7 | (t >> a) * 8 | (t >> b) * 7) & (t >> 7) = ? ");
-    pText(p, u*0.5, u*8, u, "수식을 계산하는 악기를 모았다.");
+    pText(p, u*0.5, u*8, u, "이 계산식의 결과값은 우리에게 아무런 의미가 없습니다. 이 값을 소리로 보냈을 때 노이즈 혹은 리듬이 발생합니다.");
   },
+
 
   // ========================================== Scene 3
   //3-1
@@ -158,7 +163,7 @@ let slides = [
   //3-2
   (p) => {
     setU(); 
-    p.background(255, 100, 100); 
+    p.background(100, 100, 255); 
 
     p.textSize(u);
     p.textStyle(BOLD);
@@ -167,28 +172,28 @@ let slides = [
     p.text("#3-2", u, u);
 
     pText(p, u*0.5, u*3, u*1.2, "탐색적 작곡");
-    pText(p, u*0.5, u*5, u, "예측하기 힘든 소음, 반복되는 기계음, 누군가에게는 의미있을 리듬");
+    pText(p, u*0.5, u*6, u, "예측하기 힘든 소음, 반복되는 기계음, 누군가에게는 의미있을 리듬");
+    pText(p, u*0.5, u*10, u, "물리적 장치로 인해 발생하는 글리치는 제거가 아닌 탐색의 대상입니다.");
+  },
+  //3-3
+  (p) => {
+    setU(); 
+    p.background(100, 255, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#3-3", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, "탐색적 작곡");
+    pText(p, u*0.5, u*6, u, "겹쳐서 어울림을 만들기도 하고, 흩어져서 잡음이 되기도 합니다.");
   },
 
 
-  //03
-  (p) => {
-    setU();
-    p.background(100, 255, 100); 
-        
-    p.textSize(u);
-    p.text("#02", u, u); },
-  
-  //04
-  (p) => { 
-    setU();
-    p.background(100, 100, 255); 
-    
-    p.textSize(u);
-    p.text("#03", u, u); },
 
-  // ========================================== Scene Last
-  //
+  // ========================================== 
+  //4-1
   (p) => {
     setU(); 
     p.background(255, 100, 100); 
@@ -197,12 +202,175 @@ let slides = [
     p.textStyle(BOLD);
     p.fill(0);
 
-    p.text("#0-0", u, u);
+    p.text("#4-1", u, u);
 
     pText(p, u*0.5, u*3, u*1.2, "탐색을 기다리며");
-    pText(p, u*0.5, u*5, u, "끝없는 가능성이 남아 있으니 귀 기울이고 탐색하세요. 별거 아닌 작은 존재가, 그리고 잡음이 당신에게 의미를 가지는 순간을 경험하길 바랍니다. ");
+    pText(p, u*0.5, u*6, u, "끝없는 가능성이 남아 있으니 귀 기울이고 탐색하세요. 별거 아닌 작은 존재가, 그리고 잡음이 당신에게 의미를 가지는 순간을 경험하길 바랍니다. ");
     
-  }
+  },
+  //4-2
+  (p) => {
+    setU(); 
+    p.background(100, 255, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#4-2", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, "탐색을 기다리며");
+    pText(p, u*0.5, u*6, u, "평소보다 천천히 공간을 자유롭게 걸으면서 소리 변화를 들어보세요.");
+    
+  },
+
+  // ========================================== 5
+  (p) => {
+    setU(); 
+    p.background(0, 0, 0); 
+
+    p.textSize(u*2);
+    p.textStyle(BOLD);
+    p.fill(255);
+
+    pText(p, u*0.5, u*9, u*3, "귀 기울여 들어주세요.");
+
+  },
+  //5-1
+  (p) => {
+    setU(); 
+    p.background(255, 100, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#5-1", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, s5title1);
+    pText(p, u*0.5, u*9, u, "");
+    
+  },
+  //5-1
+  (p) => {
+    setU(); 
+    p.background(100, 255, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#5-1", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, s5title2);
+    pText(p, u*0.5, u*9, u, "");
+    
+  },
+
+  //5-2
+  (p) => {
+    setU(); 
+    p.background(255, 100, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#5-2", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, s5title1);
+    pText(p, u*0.5, u*9, u, "누군가는 빅데이터를 이야기하고, 또 누군가는 학습할 데이터가 없다고 말합니다.");
+    
+  },
+  //5-2
+  (p) => {
+    setU(); 
+    p.background(100, 255, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#5-2", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, s5title2);
+    pText(p, u*0.5, u*9, u, "사운드는 변화를 직관적으로 알아차리기 쉽습니다.");
+    
+  },
+
+  //5-3
+  (p) => {
+    setU(); 
+    p.background(255, 100, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#5-3", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, s5title1);
+    pText(p, u*0.5, u*9, u, "데이터는 그 크기와 소비되는 방식으로만 가치 판단할 수 없습니다.");
+    
+  },
+  //5-3
+  (p) => {
+    setU(); 
+    p.background(100, 255, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#5-3", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, s5title2);
+    pText(p, u*0.5, u*9, u, "유희적인 사운드는 더 깊은 탐색을 가능하게 합니다.");
+    
+  },
+
+  //5-4
+  (p) => {
+    setU(); 
+    p.background(255, 100, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#5-4", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, s5title1);
+    pText(p, u*0.5, u*9, u, "동적으로 실행되는 데이터는 맥락에 따라 탐색의 범위가 넓어집니다. 즉, 1KB조차 탐색할 범위는 방대해집니다.");
+    
+  },
+  //5-4
+  (p) => {
+    setU(); 
+    p.background(100, 255, 100); 
+
+    p.textSize(u);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("#5-4", u, u);
+
+    pText(p, u*0.5, u*3, u*1.2, s5title2);
+    pText(p, u*0.5, u*9, u, "사운드...");
+    
+  },
+
+  // ========================================== End
+  (p) => {
+    setU(); 
+    p.background(0, 0, 0); 
+
+    p.textSize(u*2);
+    p.textStyle(BOLD);
+    p.fill(255);
+
+    p.text("감사합니다.", u, height-u*4);
+  },
 ];
 
 
