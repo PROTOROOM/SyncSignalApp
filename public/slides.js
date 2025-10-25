@@ -1,5 +1,6 @@
 let s5title1 = "사운드로 매개하지만, 데이터에 대해 말하려고 합니다.";
 let s5title2 = "데이터에 대해 말하지만, 사운드로 매개하려고 합니다.";
+let link;
 
 let u;
 let f;
@@ -9,6 +10,13 @@ function setU() {
   u = windowWidth * 0.06;
   f = u * 1.2;
   tc = 150;
+
+  if (!link) {
+    link = createA('https://protoroom.kr/MatterMattersManual', '계산하는 악기 매뉴얼');
+    link.style('font-size', '8vw');
+    link.size(width, 400);
+  }
+  link.position(width*2, height*2);
 }
 
 let slides = [
@@ -187,7 +195,7 @@ let slides = [
 
     p.text("#3-1", u, u);
 
-    pText(p, u*0.5, u*3, u*1.2, "탐색적 작곡");
+    pText(p, u*0.5, u*3, u*1.2, "탐색 ... ...");
     
   },
   //3-2
@@ -202,7 +210,7 @@ let slides = [
     p.text("#3-2", u, u);
 
     p.fill(tc);
-    pText(p, u*0.5, u*3, u*1.2, "탐색적 작곡");
+    pText(p, u*0.5, u*3, u*1.2, "탐색 ... ...");
     
     p.fill(0);
     pText(p, u*0.5, u*6, u, "예측하기 힘든 소음, 반복되는 기계음, 누군가에게는 의미있을 리듬");
@@ -220,7 +228,7 @@ let slides = [
     p.text("#3-3", u, u);
 
     p.fill(tc);
-    pText(p, u*0.5, u*3, u*1.2, "탐색적 작곡");
+    pText(p, u*0.5, u*3, u*1.2, "탐색 ... ...");
 
     p.fill(0);
     pText(p, u*0.5, u*13, f, "겹쳐서 어울림을 만들기도 하고, 흩어져서 잡음이 되기도 합니다.");
@@ -433,10 +441,12 @@ let slides = [
 
     p.text("여러분도 참여해보세요.", u, u*2);
 
-    let link = createA('https://protoroom.kr/MatterMattersManual', '계산하는 악기 매뉴얼');
-    link.style('font-size', '8vw');
-    link.size(width, 400);
+    
+    // let link = createA('https://protoroom.kr/MatterMattersManual', '계산하는 악기 매뉴얼');
+    // link.style('font-size', '8vw');
+    // link.size(width, 400);
     link.position(u, height/2);
+  
 
     // let btn = createButton('계산하는 악기 매뉴얼');
     // btn.position(width/2-100, height/2);
