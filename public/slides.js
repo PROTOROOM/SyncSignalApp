@@ -339,7 +339,7 @@ let slides = [
     p.text("#5-3", u, u);
 
     pText(p, u*0.5, u*3, u*1.2, s5title2);
-    pText(p, u*0.5, u*11, u, "유희적인 사운드는 더 깊은 탐색을 가능하게 합니다.");
+    pText(p, u*0.5, u*11, u, "사운드는 그 볼륨의 크기나 비트의 강도, 혹은 소비의 빈도로만 가치를 정할 수 없습니다. 듣는 이와 들리는 것 사이의 긴장 속에서 의미가 존재합니다.");
     
   },
 
@@ -370,7 +370,7 @@ let slides = [
     p.text("#5-4", u, u);
 
     pText(p, u*0.5, u*3, u*1.2, s5title2);
-    pText(p, u*0.5, u*14, u, "사운드...");
+    pText(p, u*0.5, u*14, u, "노이즈 속 하나의 들리지 않는 음도 스피커를 진동합니다.  음들은 무한한 감각의 변주를 합니다.");
     
   },
 
@@ -384,6 +384,22 @@ let slides = [
     p.fill(255);
 
     p.text("감사합니다.", u, height-u*4);
+  },
+  (p) => {
+    setU(); 
+    p.background(100, 255, 100); 
+
+    p.textSize(u*1.5);
+    p.textStyle(BOLD);
+    p.fill(0);
+
+    p.text("장치들을 살펴보세요.", u, u*2);
+
+    let link = createA('https://protoroom.kr/MatterMattersManual', '장치 매뉴얼');
+    link.style('font-size', 'xxx-large');
+    link.size(width, 400);
+    link.position(width/2-u*4, height/2);
+
   },
 ];
 
