@@ -433,19 +433,19 @@ let slides = [
 
     p.text("여러분도 참여해보세요.", u, u*2);
 
-    // let link = createA('https://protoroom.kr/MatterMattersManual', '장치 매뉴얼');
-    // link.style('font-size', 'xxx-large');
-    // link.size(width, 400);
-    // link.position(width/2-u*4, height/2);
+    let link = createA('https://protoroom.kr/MatterMattersManual', '계산하는 악기 매뉴얼');
+    link.style('font-size', '30px');
+    link.size(width, 400);
+    link.position(width/2-u*4, height/2);
 
-    let btn = createButton('계산하는 악기 매뉴얼');
-    btn.position(width/2-100, height/2);
-    btn.size(200, 100);
-    btn.style('font-size', '20px');
+    // let btn = createButton('계산하는 악기 매뉴얼');
+    // btn.position(width/2-100, height/2);
+    // btn.size(200, 100);
+    // btn.style('font-size', '20px');
 
-    btn.mousePressed(() => {
-    window.open('https://protoroom.kr/MatterMattersManual', '_blank');
-  });
+    // btn.mousePressed(() => {
+    // window.open('https://protoroom.kr/MatterMattersManual', '_blank');
+  // });
 
   },
 ];
