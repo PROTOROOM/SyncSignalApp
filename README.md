@@ -5,7 +5,7 @@ SyncSignalApp for PROTOROOM performance &lt;Matter Matters: Exploratory Composit
 
 퍼포먼스 안내 : [Matter Matters: Exploratory Composition](https://sema.seoul.go.kr/kr/whatson/event/detail?exNo=0&acadmyEeNo=0&evtNo=1455791&glolangType=KOR)
 
-- 재료 : Node.js, p5.js, socket.io
+- 재료 : Node.js, p5.js, Socket.io
 - Apache License 2.0
 - by PROTOROOM <protoroom@gmail.com>
 
